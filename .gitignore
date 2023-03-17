@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+*.json
+*.config
+*.vsidx
+*.lock
+/.vs
+/Debug
+/Release
+/x64/Debug
+/simulation.txt
