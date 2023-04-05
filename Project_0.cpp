@@ -123,7 +123,7 @@ int main()
 
             //Part 2: Create population
             system("cls");
-            srand(time(nullptr));
+            srand((unsigned)time(NULL));
 
             buffer population(height, witdh);
             population.display();

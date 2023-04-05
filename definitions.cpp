@@ -164,7 +164,10 @@ void buffer::display_legend(int day_of_ep, int counter_healthy, int counter_ill,
 
 void buffer::infect_p0()
 {
-    person[height / 2][witdh / 2].symbol = 'I';
+    int randX = 1 + (rand() % witdh);
+    int randY = 1 + (rand() % height);
+
+    person[randY][randX].symbol = 'I';
 }
 
 void buffer::infection(const int max_encounter, const double t_rate, vector<pair<int, int>>& coord)
